@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 
 print_divider(){
     echo "============================";
@@ -36,7 +36,7 @@ print_newline
 
 echo "Web Server Details";
 print_divider
-    /usr/sbin/nginx -T | egrep " server_name | root " |uniq
+    /usr/sbin/nginx -T | grep -E " server_name | root " | uniq
     php -v
     php -m
 print_divider
