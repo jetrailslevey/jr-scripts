@@ -74,6 +74,6 @@ print_newline
 echo "MySQL Details";
 print_divider
     mysql -V
-    mysql -e 'SHOW VARIABLES;'
+    mysql -s -N -e 'SHOW VARIABLES;'
 print_divider
 ## End MySQL Details
