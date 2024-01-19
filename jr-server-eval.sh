@@ -4,7 +4,7 @@ print_divider(){
     echo "============================";
 }
 print_newline(){
-    echo "\n";
+    printf "\n";
 }
 
 echo "OS Details";
